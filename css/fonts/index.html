@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>test font icon</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<style>
+@font-face {
+	font-family: 'broccolidry';
+	src: url('broccolidry.eot');
+	src: url('broccolidry.eot?#iefix') format('eot'),
+		url('broccolidry.svg#broccolidry') format('svg'),
+		url('broccolidry.woff') format('woff'),
+		url('broccolidry.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+body{font:32px 'broccolidry'; }
+span{font:32px "arial";}
+div{float:left; margin-right:5px; }
+</style>
+
+</head>
+<body>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var template = '<style>.Axxxx::before{content : "\\yyyy";}</style><div class="Azzzz"><span>tttt - </span></div>';
+            var result = '';
+            for (i = 0; i < 65535; i++) {
+                var text = template.replace('xxxx', i).replace('yyyy', i.toString(16)).replace('zzzz', i).replace('tttt', i.toString(16));
+                result = result + text;
+            }
+            $("#textOut").html(result);            
+        });
+    </script>
+<div id="textOut" >
+</div>
+</body>
+</html>

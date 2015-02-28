@@ -1,0 +1,97 @@
+@import url('icons.css');
+@font-face {
+ font-family: 'UTM Neutra Regular';
+ src: url('../fonts/UTM Neutra Regular.woff') format('woff'), url('../fonts/UTM Neutra Regular.ttf') format('truetype');
+}
+ @font-face {
+ font-family: 'Gothic';
+ src: url('../fonts/Gothic.woff') format('woff'), url('../fonts/Gothic.ttf') format('truetype');
+}
+
+
+* { margin:0px; }
+
+body { font:12px 'Gothic', Arial; padding-top:70px; }
+#menu-top{ font:14px 'UTM Neutra Regular'; margin:0px; }
+#menu-top a { color:#000; }
+#menu-top .navbar-nav li{ padding:0px 35px;}
+#menu-top .navbar-nav li a{ padding:0px; height:70px; line-height:70px; }
+#menu-top .navbar-nav li a:hover, #menu-top .navbar-nav li a.current{ color:#64c529; }
+
+.carousel .item{ background:#333; height:670px; }
+
+#block-distributor { float: left; width:100%; }
+#block-distributor .row{ background:#000; position:relative; float:left; }
+#block-distributor .row h3{ position:absolute; top:60%; width:100%; text-align:center; z-index:99; font-family: 'Gothic'; font-size:68px; color:#fff; }
+#block-distributor .row h3 a{text-decoration:none; color:#FFF;}
+
+#block-menufacturing { background:url(../images/block-menufacturing.jpg) top center; color:#FFF; float:left; width:100%;}
+#block-menufacturing h2{ font-family: Gothic; padding-bottom:10px; font-size:48px; font-weight:lighter;}
+#block-menufacturing .container{ padding:50px 0px; }
+#block-menufacturing .container .btn-link {color:#b0b0b0;}
+
+#block-bot { background: #333; color: #FFF; padding: 20px 0px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; float:left; width:100%; font-size:16px; }
+#block-bot .right{ text-align:right;}
+
+.wedding-intro { position:relative; overflow:hidden; height:643px;}
+.wedding-intro .bg { height: 789px; position:absolute; left:50%; margin-left:-30%; }
+.wedding-intro .logo { position:absolute; top:30px; left:200px; }
+.wedding-intro .text { position: absolute; top: 120px; left: 180px; width: 350px; height: 300px; font-family: Gothic; }
+.wedding-intro .text a, .wedding-intro .text a span{ color:#f00; text-decoration:none; font-weight:bold; font-size:16px;}
+.wedding-intro .text a:hover, .wedding-intro .text a:hover span{ color:#ff5555; }
+
+.wedding-intro .row{ position:relative; height:643px; }
+.wedding-intro .bg-bride { background: url(../images/bg-bride.jpg) top center; background-size: 100%;}
+.wedding-intro .bg-bridemaid { background: url(../images/bg-bridemaid.jpg) top center; background-size: 100%;}
+.wedding-intro .row h3 { position: absolute; top:40%; transition: ease-out 1s; }
+.wedding-intro .row h3 a { color:#fff; font:32px "Gothic"; text-decoration:none; }
+.wedding-intro .row h3 a span { color: #FFF; }
+.wedding-intro .bg-bride h3 { right: 20px; animation: move1 1s ease-out;-webkit-animation: move1 1s ease-out;-moz-animation:move1 1s ease-out;}
+.wedding-intro .bg-bridemaid h3 { left: 20px; animation: move2 1.5s ease-out;-webkit-animation: move2 1.5s ease-out;-moz-animation:move2 1.5s ease-out;}
+.wedding-intro .row h3 a:hover,.wedding-intro .row h3 a:hover span { color: #808080; }
+/*CSS3*/
+.wedding-intro .bg-bride h3:hover{ transform: translate(-15px,0px); -webkit-transform: translate(-15px,0px); -moz-transform: translate(-15px,0px); }
+.wedding-intro .bg-bridemaid h3:hover { transform: translate(15px,0px); -webkit-transform: translate(15px,0px); -moz-transform: translate(15px,0px); }
+
+@keyframes move1 { 0% { right: 40px; opacity: 0; } 100% { right: 20px; opacity: 1; }}
+@-webkit-keyframes move1 { 0% { right: 40px; opacity: 0; } 100% { right: 20px; opacity: 1; }}
+@-moz-keyframes move1 {  0% { right: 40px; opacity: 0; }  100% { right: 20px; opacity: 1; }}
+@keyframes move2 { 0% { left: 40px; opacity: 0; } 20% { left: 40px; opacity: 0; } 100% { left: 20px; opacity: 1; }}
+@-webkit-keyframes move2 { 0% { left: 40px; opacity: 0; } 20% { left: 40px; opacity: 0; } 100% { left: 20px; opacity: 1; }}
+@-moz-keyframes move2 { 0% { left: 40px; opacity: 0; } 20% { left: 40px; opacity: 0; } 100% { left: 20px; opacity: 1; }}
+
+.gallery { min-height: 643px; background: #000; }
+.gallery h3 { font-size: 42px; font-family: Gothic; color:#FFF; }
+.gallery .item { padding: 15px; position:relative; }
+.gallery .item img { cursor: pointer; transition:ease-out 0.5s; -webkit-transition: ease-out 0.5s; -moz-transition: ease-out 0.5s; border:1px solid #FFF; }
+.gallery .item .title { position: absolute; font: 32px 'Gothic'; color: #FFF; top:70%; width:100%; text-align:center; margin:-15px; opacity:0; transition:ease-out 0.5s; -webkit-transition: ease-out 0.5s; -moz-transition: ease-out 0.5s; }
+.gallery .item:hover img { opacity: 0.5; }
+.gallery .item:hover .title { opacity: 1; }
+
+.gallery .show { position: absolute; width:600px; top:30px; left:50%; margin-left:-300px; z-index:999; }
+
+.gown-bags .first-block { background:url(../images/bg-gownbag-1.jpg) center top; min-height:600px; background-size:100%; }
+.gown-bags .first-block h1{ text-align:center; font-size:65px; color:#fff; margin-top:300px; font-weight:lighter; }
+.gown-bags .first-block p{text-align:center; color:#FFF; font-size:30px; font-weight:100;}
+.gown-bags .second-block { padding:30px 0px; }
+.gown-bags .second-block h1{ text-align:center; font-size:65px; color:#333; font-weight:lighter; }
+.gown-bags .second-block p{text-align:center; color:#333; font-size:30px; font-weight:100;}
+.gown-bags .third-block { background:#f8f8f8; padding-top:30px; }
+.gown-bags .third-block h1{ text-align:center; font-size:40px; color:#333;margin-bottom:30px; font-weight:300; }
+.gown-bags .third-block .col-lg-6 { position:relative; padding:15px 0px 0px 0px; overflow:hidden; }
+.gown-bags .third-block .col-lg-6 .overlay { width:100%; height:100%; position:absolute; top:0px; transition: ease-out 0.5s; -webkit-transition: ease-out 0.5s; -moz-transition: ease-out 0.5s; }
+.gown-bags .third-block .col-lg-6 h2 { position: absolute; margin-top:30%; color:#FFF; top:0px; text-align:center; width:100%; font-size:42px; font-weight:100; transition: ease-out 0.5s; -webkit-transition: ease-out 0.5s; -moz-transition: ease-out 0.5s; opacity:0; }
+.gown-bags .third-block .col-lg-6 h2 a{ color:#FFF; }
+.gown-bags .third-block .col-lg-6 h2 a:hover{ text-decoration:none; }
+.gown-bags .third-block .col-lg-6 .img img { transition: ease-out 0.5s; -webkit-transition: ease-out 0.5s; -moz-transition: ease-out 0.5s; }
+.gown-bags .third-block .col-lg-6:hover .overlay{ background:#000; opacity:0.7;}
+.gown-bags .third-block .col-lg-6:hover h2{ opacity:1; }
+.gown-bags .third-block .col-lg-6:hover img{ transform: scale(1.05); }
+
+#list-gown-bags { background:#FFF; }
+#list-gown-bags h3 { color:#333; }
+#list-gown-bags .item {  }
+#list-gown-bags .item img { border:1px solid #CCC; }
+#list-gown-bags .item .title { top:30%; font-size:25px; }
+#list-gown-bags .item .opacity { width:100%; height:100%; position:absolute; top:0px; left:0px; transition: ease-out 0.5s; -webkit-transition: ease-out 0.5s; -moz-transition: ease-out 0.5s; border:15px solid #FFF; }
+#list-gown-bags .item:hover .opacity {background:#000; opacity:0.4;}
