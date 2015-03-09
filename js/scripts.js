@@ -29,4 +29,6 @@ $(document).ready(function(){
 		$("#showMenufacturing").collapse();
 		btnShow.hide();
 	});
+	
+	$('.photobox').photobox('a', { thumbs:true });
 });
