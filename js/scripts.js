@@ -30,8 +30,6 @@ $(document).ready(function(){
 		btnShow.hide();
 	});
 	
-	
-	
 	var botId = $("#block-bot");
 	var windowHeight = $(window).height();
 	if(windowHeight > 1366){
