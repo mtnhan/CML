@@ -30,5 +30,14 @@ $(document).ready(function(){
 		btnShow.hide();
 	});
 	
-	$('.photobox').photobox('a', { thumbs:true });
+	
+	
+	var botId = $("#block-bot");
+	var windowHeight = $(window).height();
+	if(windowHeight > 0){
+		botId.css({
+			"bottom" : 0,
+			"position" : "absolute",
+		});	
+	}
 });
