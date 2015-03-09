@@ -34,7 +34,7 @@ $(document).ready(function(){
 	
 	var botId = $("#block-bot");
 	var windowHeight = $(window).height();
-	if(windowHeight > 0){
+	if(windowHeight > 1366){
 		botId.css({
 			"bottom" : 0,
 			"position" : "absolute",
