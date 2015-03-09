@@ -23,4 +23,10 @@ $(document).ready(function(){
 	        }
 	    });
 	});
+	
+	var btnShow = $("#btnShow");
+	btnShow.click(function(){
+		$("#showMenufacturing").collapse();
+		btnShow.hide();
+	});
 });

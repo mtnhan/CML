@@ -29,6 +29,8 @@ body { font:12px 'Gothic', Arial; padding-top:70px; }
 #block-menufacturing h2{ font-family: Gothic; padding-bottom:10px; font-size:48px; font-weight:lighter;}
 #block-menufacturing .container{ padding:50px 0px; }
 #block-menufacturing .container .btn-link {color:#b0b0b0;}
+#block-menufacturing .facturing-images .list-inline { margin:0px; }
+#block-menufacturing .facturing-images .list-inline li { padding-top:5px; padding-bottom:5px; }
 
 #block-bot { background: #333; color: #FFF; padding: 20px 0px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; float:left; width:100%; font-size:16px; }
 #block-bot .right{ text-align:right;}
